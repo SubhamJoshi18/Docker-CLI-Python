@@ -1,11 +1,15 @@
 from abc import ABC,abstractmethod
-
 from exceptions.index import DockerImageException
 from config.dockerConfig import docker_client
 from docker.errors import ImageNotFound
 from docker.errors import APIError
 from exceptions.index import DockerException
 from docker.errors import DockerException
+from datetime import datetime
+from jsonUtils.Image.ImageJson import store_image_pull_logs
+from jsonUtils.Image.ImageJson import store_image_list
+from jsonUtils.Image.ImageJson import store_deleted_image
+from extraction.ExtractText import translate
 
 
 class DockerImageAbs(ABC):
@@ -20,7 +24,7 @@ class DockerImageAbs(ABC):
         pass
 
     @abstractmethod
-    def delete_image(self):
+    def delete_image(self,image_name):
         pass
 
 
@@ -54,6 +58,15 @@ class DockerImage(DockerImageAbs,ABC):
 
         image = docker_client.images.pull(image_name)
 
+        current_datetime = datetime.now()
+
+        payload_logs = {
+            "image_Tags":image.tags,
+            "image_pull_at" : current_datetime.strftime("%Y-%m-%d %H:%M:%S")
+        }
+
+        store_image_pull_logs(payload_logs)
+
         print(f'Successfully pulled image : {image.tags}')
 
     except ImageNotFound:
@@ -68,29 +81,27 @@ class DockerImage(DockerImageAbs,ABC):
     except Exception as e:
         print(f'An unexpected error occurred: {e}')
 
+
+
+
+
   def list_images(self):
      images_list = []
 
      try:
-
          all_images = docker_client.images.list(all=True)
-
          for index , image in enumerate(all_images):
-
              custom_payload = {
                  "image_Id" : image.id,
                  "image_tags":image.tags,
                  "image_name":image.labels
              }
 
-
              images_list.append(custom_payload)
-
-
          print('Image Fetches from Docker Engine') if len(images_list) > 0 else print('Images are Empty in your Docker Engine')
-
-
-         print(images_list)
+         store_image_list(images_list)
+         image_statement = f'There are {len(images_list)}  Images in your Docker Engine'
+         translate(image_statement)
          return images_list
 
      except DockerException as e:
@@ -114,6 +125,15 @@ class DockerImage(DockerImageAbs,ABC):
 
           print(f'Deleting {get_image.id} with {get_image.tags}')
 
+          current_date = datetime.now()
+
+
+          payload = {
+              "image_name":image_name,
+              "image_id":get_image.id,
+              "deleted_at": current_date.strftime("%Y-%m-%d %H:%M:%S")
+          }
+          store_deleted_image(payload)
           get_image.remove(force=True)
 
           print(f'{get_image.id} Has Been Deleted or Removed')

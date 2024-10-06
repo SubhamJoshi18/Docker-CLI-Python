@@ -1,0 +1,568 @@
+{
+    "Images": [
+        {
+            "image_Id": "sha256:eb03a60b3dbaa46eff94376b308200ed77eaafa6193831da07f881f4eec48c4e",
+            "image_tags": [
+                "jenkins/agent:alpine-jdk11"
+            ],
+            "image_name": {
+                "org.opencontainers.image.description": "This is a base image, which provides the Jenkins agent executable (agent.jar)",
+                "org.opencontainers.image.licenses": "MIT",
+                "org.opencontainers.image.source": "https://github.com/jenkinsci/docker-agent",
+                "org.opencontainers.image.title": "Official Jenkins Agent Base Docker image",
+                "org.opencontainers.image.url": "https://www.jenkins.io/",
+                "org.opencontainers.image.vendor": "Jenkins project",
+                "org.opencontainers.image.version": "3261.v9c670a_4748a_9"
+            }
+        },
+        {
+            "image_Id": "sha256:876ff73f8dea3c7f5ff39b618217dc9dd3488784ca54af944fc1f785d447dce3",
+            "image_tags": [
+                "team-hyvemind-hackfest2024-frontend:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "team-hyvemind-hackfest2024",
+                "com.docker.compose.service": "frontend",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:45c476d4e4aa08670424514becba1639c91d7948aae8c7d5bca82b5a1a27d50c",
+            "image_tags": [
+                "team-hyvemind-hackfest2024-node-microservice:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "team-hyvemind-hackfest2024",
+                "com.docker.compose.service": "node-microservice",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:5b53f50f36c26563298ac1b0ea6a46406f7e9550cae61b58e2ac073f855bd9b2",
+            "image_tags": [
+                "team-hyvemind-hackfest2024-model-microservice:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "team-hyvemind-hackfest2024",
+                "com.docker.compose.service": "model-microservice",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:7f1b48db5b8017796724353df68a668deb8d39212cea5cc491b8728df52d6bd4",
+            "image_tags": [
+                "team-hyvemind-hackfest2024-start-node-consumer:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "team-hyvemind-hackfest2024",
+                "com.docker.compose.service": "start-node-consumer",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:9847bdbe5623f360e6fc2aee2c114bbb7c1343e04ce30c05e74fd8a09322e1c4",
+            "image_tags": [
+                "merohostelmate-node-microservice:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "merohostelmate",
+                "com.docker.compose.service": "node-microservice",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:e0fad4eaab99a28e4ff84250f6dcaef83c3060a754c1e248ff61df76485008e4",
+            "image_tags": [
+                "merohostelmate-nginx-api-gateway:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "merohostelmate",
+                "com.docker.compose.service": "nginx-api-gateway",
+                "com.docker.compose.version": "2.28.1",
+                "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+            }
+        },
+        {
+            "image_Id": "sha256:ae6d8960cd3fecb88bfffec031f60b4e6d98680b5eb6a55b11ce1e3cf2aadfbb",
+            "image_tags": [
+                "team-hyvemind-hackfest2024-nginx-api-gateway:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "team-hyvemind-hackfest2024",
+                "com.docker.compose.service": "nginx-api-gateway",
+                "com.docker.compose.version": "2.28.1",
+                "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+            }
+        },
+        {
+            "image_Id": "sha256:84308b4c5aba00db30a0a1085ca704156e0ad1e4ef4d63b8734f1ba73f7df530",
+            "image_tags": [
+                "merohostelmate-model-microservice:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "merohostelmate",
+                "com.docker.compose.service": "model-microservice",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:630d5726674a3411457d0974855dc1a029ea52a1ac3db11772c0d836737db58b",
+            "image_tags": [
+                "merohostelmate-hostel-microservice:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "merohostelmate",
+                "com.docker.compose.service": "hostel-microservice",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:78a85e1d397831fa24560b75e4c51d06ab28e2275455d5a153e1a561ade9854b",
+            "image_tags": [
+                "merohostelmate-user-microservice:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "merohostelmate",
+                "com.docker.compose.service": "user-microservice",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:c2b7cabbe23ee8f5f2d9a9899fe889f33d11b4d8f5432e71b50e08992b996414",
+            "image_tags": [
+                "test-microservice-frontend:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "test-microservice",
+                "com.docker.compose.service": "frontend",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:dce72790ffe423d25b6b417ba9e5afa3b752c98cb5b93344e4329023839bedec",
+            "image_tags": [
+                "merohostelmate-frontend:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "merohostelmate",
+                "com.docker.compose.service": "frontend",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:5882896f0e34344a77b4c4abdea395ba2998924c60db4e64f62d176ee1ebc0b7",
+            "image_tags": [
+                "test-microservice-user-microservice:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "test-microservice",
+                "com.docker.compose.service": "user-microservice",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:da36331574bd137564fc22347070dc250d354c848de5d0eabfc69d493c820c17",
+            "image_tags": [
+                "test-microservice-hostel-microservice:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "test-microservice",
+                "com.docker.compose.service": "hostel-microservice",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:1e2d32334d75e12bfd70fe4464918836791b96da55605f21e003946d1ff97c35",
+            "image_tags": [
+                "testing-temp-frontend:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "testing-temp",
+                "com.docker.compose.service": "frontend",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:c7df0fe48fbc33f44b08925b3fc5af20844078054b23e65c446d4afa0159a7ee",
+            "image_tags": [
+                "testing-temp-model-microservice:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "testing-temp",
+                "com.docker.compose.service": "model-microservice",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:2f2df0414007da185144bb17f0209df8457595fab2508a5b18d205642dd3bd9a",
+            "image_tags": [
+                "test-microservice-model-microservice:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "test-microservice",
+                "com.docker.compose.service": "model-microservice",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:e6ae0c079e48712b0b5173bc4e79e32586a01f3865012cae32325c8e907b75e6",
+            "image_tags": [
+                "testing-temp-user-microservice:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "testing-temp",
+                "com.docker.compose.service": "user-microservice",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:1a894624c885b3d67a193dffada5388768e242f9e5c2a7d86b29dee245e9a6b1",
+            "image_tags": [
+                "testing-temp-hostel-microservice:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "testing-temp",
+                "com.docker.compose.service": "hostel-microservice",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:bb14f348cdd074e4341788110fd732f9ef9045c4510d1ee14424496415e02f26",
+            "image_tags": [
+                "test-microservice-nginx-api-gateway:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "test-microservice",
+                "com.docker.compose.service": "nginx-api-gateway",
+                "com.docker.compose.version": "2.28.1",
+                "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+            }
+        },
+        {
+            "image_Id": "sha256:3753473d4dbf5d4e7a57c23ff1d2b9c0ff8d11e1f0dbf1177ec7fbb9eaa32c04",
+            "image_tags": [
+                "testing-temp-nginx-api-gateway:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "testing-temp",
+                "com.docker.compose.service": "nginx-api-gateway",
+                "com.docker.compose.version": "2.28.1",
+                "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+            }
+        },
+        {
+            "image_Id": "sha256:d7214c5384d5559f828cddfc7a6ccb5d197ee3761605d591c4ffea15b093e592",
+            "image_tags": [
+                "myjenkins-blueocean:2.414.2"
+            ],
+            "image_name": {
+                "org.opencontainers.image.description": "The Jenkins Continuous Integration and Delivery server",
+                "org.opencontainers.image.licenses": "MIT",
+                "org.opencontainers.image.revision": "8fd8b2501b26373033e1d24dc7b357e87e3dd1f6",
+                "org.opencontainers.image.source": "https://github.com/jenkinsci/docker",
+                "org.opencontainers.image.title": "Official Jenkins Docker image",
+                "org.opencontainers.image.url": "https://www.jenkins.io/",
+                "org.opencontainers.image.vendor": "Jenkins project",
+                "org.opencontainers.image.version": "2.414.2"
+            }
+        },
+        {
+            "image_Id": "sha256:dbaab90c0db8d25c5034c1210ef0e5596cb3e56960e51b07ca849a36a571da9d",
+            "image_tags": [
+                "project-frontend:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "project",
+                "com.docker.compose.service": "frontend",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:4cbcd9faeb50efa0d43e3c5dba95a7aa4e2d589498cbc60200be5883a82df012",
+            "image_tags": [
+                "project-user-microservice:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "project",
+                "com.docker.compose.service": "user-microservice",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:237af5124023da572f548687bf0c1008dc0849302b8b6f31efd91beb24e9d1e1",
+            "image_tags": [
+                "project-api-gateway:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "project",
+                "com.docker.compose.service": "api-gateway",
+                "com.docker.compose.version": "2.28.1",
+                "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+            }
+        },
+        {
+            "image_Id": "sha256:bdab69d9032f4b080e38529cbb6d5c05ff3da7420e42282af1e6e226f22ee99b",
+            "image_tags": [
+                "project-flask-microservice:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "project",
+                "com.docker.compose.service": "flask-microservice",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:60200f9517d8d1a12f94f36714456300bbe55cc1191b53b93a5b63c8d3602c21",
+            "image_tags": [
+                "project-hostel-microservice:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "project",
+                "com.docker.compose.service": "hostel-microservice",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:56400b61a2d9b6207f60aa5e44f3bdb0bb87ffa31b4a20d97764911880a1d725",
+            "image_tags": [
+                "hack-nginx:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "hack",
+                "com.docker.compose.service": "nginx",
+                "com.docker.compose.version": "2.28.1",
+                "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+            }
+        },
+        {
+            "image_Id": "sha256:91a6b1e006b000c8845c1e0899f761b8aac6be791e46a1db4b79be9ba2999007",
+            "image_tags": [
+                "hack-react-app:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "hack",
+                "com.docker.compose.service": "react-app",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:c5a8c3fb98f6ee90fe70565e8bdc0e1e1131d61c1a298774b4c5052760180758",
+            "image_tags": [
+                "hack-node-service-1:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "hack",
+                "com.docker.compose.service": "node-service-1",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:cccf9ee289f8ee68f7a50f729052b82977648825c0a5239a9f5ba0de5c2c5fec",
+            "image_tags": [
+                "hack-node-service-2:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "hack",
+                "com.docker.compose.service": "node-service-2",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:f93b483c979d8153bb6e6b552731b72e843e3699c130e711bececd57b16f244a",
+            "image_tags": [
+                "ngi-backend_server2:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "ngi",
+                "com.docker.compose.service": "backend_server2",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:acfc866b5b2d1ad4f823e5a9671f6833bb28c6568850cc3b4cb1bc7d099b374d",
+            "image_tags": [
+                "ngi-frontend_server:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "ngi",
+                "com.docker.compose.service": "frontend_server",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:4d26fe15dd3dab802a50be5bfe55a5429f1e1833cdd2cdfde74ca608515b7a28",
+            "image_tags": [
+                "ngi-backend_server1:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "ngi",
+                "com.docker.compose.service": "backend_server1",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:7a48c80b90473fd9dbf4a9bf66a028a48f5d94dd2c0d5b6ec8c26dcaa645beb4",
+            "image_tags": [
+                "server-nodeapp:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "server",
+                "com.docker.compose.service": "nodeapp",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:4d441da0b85563bec4ac79fdedfbf140c133986e1e8a9d4d073a0b4767514d2e",
+            "image_tags": [
+                "mongo:latest"
+            ],
+            "image_name": {
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "24.04"
+            }
+        },
+        {
+            "image_Id": "sha256:9d6a7bdb01fb4f7d7f938de641f50eb5b1d32e9f79ec48f10e7c4d069ec8a664",
+            "image_tags": [
+                "rabbitmq:management"
+            ],
+            "image_name": {
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "24.04"
+            }
+        },
+        {
+            "image_Id": "sha256:a5dc2295d9040d2bfdf5371f1f4f871998a21a79e51274da0e2090254dcc39f7",
+            "image_tags": [
+                "confluentinc/cp-kafka:latest"
+            ],
+            "image_name": {
+                "architecture": "x86_64",
+                "build-date": "2024-08-20T18:30:35",
+                "com.redhat.component": "ubi8-minimal-container",
+                "com.redhat.license_terms": "https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI",
+                "description": "Common base image for Confluent's Docker images.",
+                "distribution-scope": "public",
+                "io.buildah.version": "1.29.0",
+                "io.confluent.docker": "true",
+                "io.confluent.docker.build.number": "1e1b3d1f",
+                "io.confluent.docker.git.id": "fe371d7",
+                "io.confluent.docker.git.repo": "confluentinc/kafka-images",
+                "io.k8s.description": "The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.",
+                "io.k8s.display-name": "Red Hat Universal Base Image 8 Minimal",
+                "io.openshift.expose-services": "",
+                "io.openshift.tags": "minimal rhel8",
+                "maintainer": "partner-support@confluent.io",
+                "name": "cp-kafka",
+                "release": "7.7.1-29",
+                "summary": "Confluent platform Kafka.",
+                "url": "https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8-minimal/images/8.10-1052.1724178568",
+                "vcs-ref": "4f8da2b64a13f2a264bd802d8909bf803211fb20",
+                "vcs-type": "git",
+                "vendor": "Confluent",
+                "version": "fe371d7"
+            }
+        },
+        {
+            "image_Id": "sha256:c04684cb4b3a256f8647c1063bef94da6b2aa01c36958626bb0ed7be241d15c1",
+            "image_tags": [
+                "load_testing-state-management-consumer:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "load_testing",
+                "com.docker.compose.service": "state-management-consumer",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:080bf472bbc80bc5001593e10151057e53f60ae41b269f25cf76169831b661f9",
+            "image_tags": [
+                "load_testing-mtf-pim-consumer:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "load_testing",
+                "com.docker.compose.service": "mtf-pim-consumer",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:e3101ed14dbf3299d481b17a6edc591c9d93bab928403e8fdbc96d4d37a162ab",
+            "image_tags": [
+                "load_testing-unified-consumer:latest"
+            ],
+            "image_name": {
+                "com.docker.compose.project": "load_testing",
+                "com.docker.compose.service": "unified-consumer",
+                "com.docker.compose.version": "2.28.1"
+            }
+        },
+        {
+            "image_Id": "sha256:8bd2d022f7823571f743f2e10592e9e8846915f2b0217df69841acc0ab59df78",
+            "image_tags": [
+                "rabbitmq:3"
+            ],
+            "image_name": {
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        {
+            "image_Id": "sha256:aff855c8cd308b86e50d8a0e4810bb0fa9b3a79c048fc4f37c4305697aa778f7",
+            "image_tags": [
+                "redis/redis-stack-server:latest"
+            ],
+            "image_name": {
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        {
+            "image_Id": "sha256:642d31cc2d523798623b2cbaab7c0a1ef6dfe529c599f0c25e63e621d977473a",
+            "image_tags": [
+                "mongo:5"
+            ],
+            "image_name": {
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "20.04"
+            }
+        },
+        {
+            "image_Id": "sha256:aaf61d6ccc3f58a9cbe61253137eebc436b88c3276ba3f91653fffbc06c0e524",
+            "image_tags": [
+                "zookeeper:latest"
+            ],
+            "image_name": {
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        {
+            "image_Id": "sha256:48aa08743c42bc73395496302294d8debe32228f2c9433c73a0c593a0c0500c0",
+            "image_tags": [
+                "rabbitmq:3-management"
+            ],
+            "image_name": {
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        {
+            "image_Id": "sha256:fe573725a2e4652c4087e380341c6d6dd26ea39c9b93a46e6a4e59c5c1318128",
+            "image_tags": [
+                "devopsjourney1/myjenkinsagents:python"
+            ],
+            "image_name": {
+                "Description": "This is a base image, which provides the Jenkins agent executable (slave.jar)",
+                "Vendor": "Jenkins project",
+                "Version": "4.10",
+                "org.opencontainers.image.description": "This is a base image, which provides the Jenkins agent executable (agent.jar)",
+                "org.opencontainers.image.licenses": "MIT",
+                "org.opencontainers.image.source": "https://github.com/jenkinsci/docker-agent",
+                "org.opencontainers.image.title": "Official Jenkins Agent Base Docker image",
+                "org.opencontainers.image.url": "https://www.jenkins.io/",
+                "org.opencontainers.image.vendor": "Jenkins project",
+                "org.opencontainers.image.version": "4.10"
+            }
+        }
+    ]
+}

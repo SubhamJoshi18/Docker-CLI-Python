@@ -1,9 +1,11 @@
 from config.dockerConfig import docker_client
-from exceptions.index import DockerContainerException, DockerException
+from exceptions.index import DockerContainerException
 from abc import ABC,abstractmethod
 from docker.errors import ImageNotFound
 from datetime import datetime
 from helpers.image import DockerImage
+from jsonUtils.Container.ContainerJson import store_containers_json
+
 
 docker_image = DockerImage()
 
@@ -31,10 +33,11 @@ class DockerContainerAbs(ABC):
 class DockerContainer(DockerContainerAbs, ABC):
 
     def list_running_container(self):
-
+        running_container_name  = []
         try:
 
             running_container = docker_client.containers.list()
+
 
             print(running_container)
             return running_container
@@ -59,7 +62,8 @@ class DockerContainer(DockerContainerAbs, ABC):
             if len(container_name)  == 0 or not container_name:
                 raise DockerContainerException('There is no container on your Docker Engine')
 
-            print(container_name)
+            store_containers_json(container_name)
+
             return container_name
 
         except DockerContainerException as e:

@@ -10,3 +10,4 @@ class DockerContainerException(Exception):
 
 class DockerImageException(Exception):
     pass
+
